@@ -89,7 +89,7 @@ static const int Y_SUN_SMALL = 76;  // sunrise/set small
 
 // Bottom URL
 static const char* URL_TEXT =
-  "https://github.com/FT-tele/ST7305_MonoTFT_Library/blob/main/ST7305_MonoTFT_Library.zip";
+  " github.com ---------> ST7305_MonoTFT_Library ---------> ST7305_MonoTFT_Library";
 
 // ================= Time/geo/weather ==================
 static bool haveTime = false;
@@ -610,7 +610,7 @@ static void drawPage(bool showSeconds) {
   int qrX = rightX + (rightW - qrPix) / 2;
   int qrY = calY + (availVH - qrPix) / 2;
   if (qrY < calY) qrY = calY;
-  drawQR_L(qrX, qrY, scale);
+  //drawQR_L(qrX, qrY, scale);
 
   // URL bottom
   int urlTop = LAND_H - MARGIN - URL_BLOCK_H + 9;
